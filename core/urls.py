@@ -1,6 +1,8 @@
+from django.contrib import admin
 from django.urls import path
-from .views import home, download_apk
+from . import views
 
 urlpatterns = [
-    path('', home, name="home")
+    path('', views.home, name="home"),
+    path('descargar/', views.download_apk, name='download_apk'),
 ]

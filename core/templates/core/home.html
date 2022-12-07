@@ -96,7 +96,7 @@
       {% if request.user_agent.is_pc%}
       <p class="lead">{{data}}</p>
       <div id="liveAlertPlaceholder"></div>
-      <a class="btn btn-outline-secondary" href="" download id="liveAlertBtn">Descargar</a>
+      <a class="btn btn-outline-secondary" href="{% url 'download_apk' %}" id="liveAlertBtn">Descargar</a>
 
       {% else %}
       <p class="lead">{{data}}</p>
