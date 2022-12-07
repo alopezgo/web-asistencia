@@ -75,16 +75,16 @@
     
 <header class="site-header sticky-top py-1">
   <nav class="container d-flex flex-column flex-md-row justify-content-between">
-    <a class="py-2" href="#" aria-label="Product">
+    <a class="py-2" href="" aria-label="Product">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img" viewBox="0 0 24 24"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
     </a>
-    <a class="py-2 d-none d-md-inline-block" href="#">Productos</a>
-    <a class="py-2 d-none d-md-inline-block" href="#">Más Información</a>
-    <a class="py-2 d-none d-md-inline-block" href="#">Seguridad</a>
-    <a class="py-2 d-none d-md-inline-block" href="#">Asistencia</a>
-    <a class="py-2 d-none d-md-inline-block" href="#">Descarga</a>
-    <a class="py-2 d-none d-md-inline-block" href="#">Nosotros</a>
-    <a class="py-2 d-none d-md-inline-block" href="#">FAQ</a>
+    <a class="py-2 d-none d-md-inline-block" href="">Productos</a>
+    <a class="py-2 d-none d-md-inline-block" href="">Más Información</a>
+    <a class="py-2 d-none d-md-inline-block" href="">Seguridad</a>
+    <a class="py-2 d-none d-md-inline-block" href="">Asistencia</a>
+    <a class="py-2 d-none d-md-inline-block" href="">Descarga</a>
+    <a class="py-2 d-none d-md-inline-block" href="">Nosotros</a>
+    <a class="py-2 d-none d-md-inline-block" href="">FAQ</a>
   </nav>
 </header>
 
@@ -93,14 +93,14 @@
     <div class="col-md-5 p-lg-5 mx-auto my-5">
       <h1 class="display-4 fw-normal">RegistrApp</h1>
       <p class="lead fw-normal">Olvídate de pasar lista, una App ya se ocupa de ello. Tú preocupate de poner atención en clases y pasar el ramo como sea.</p>
-      {% if request.user_agent.is_mobile%}
+      {% if request.user_agent.is_pc%}
       <p class="lead">{{data}}</p>
       <div id="liveAlertPlaceholder"></div>
-      <a class="btn btn-outline-secondary" href={{data}} download= 'RegistrApp' id="liveAlertBtn">Descargar</a>
+      <a class="btn btn-outline-secondary" href="" download id="liveAlertBtn">Descargar</a>
 
       {% else %}
       <p class="lead">{{data}}</p>
-      <a class="btn btn-outline-secondary" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Obtener Código</a>
+      <a class="btn btn-outline-secondary" href="" data-bs-toggle="modal" data-bs-target="#exampleModal">Obtener Código</a>
       
       <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -157,37 +157,37 @@
     <div class="col-6 col-md">
       <h5>Legal</h5>
       <ul class="list-unstyled text-small">
-        <li><a class="link-secondary" href="#">Privacidad</a></li>
-        <li><a class="link-secondary" href="#">Términos</a></li>
-        <li><a class="link-secondary" href="#">Política sobre cookies</a></li>
-        <li><a class="link-secondary" href="#">Propiedad intelectual</a></li>
+        <li><a class="link-secondary" href="">Privacidad</a></li>
+        <li><a class="link-secondary" href="">Términos</a></li>
+        <li><a class="link-secondary" href="">Política sobre cookies</a></li>
+        <li><a class="link-secondary" href="">Propiedad intelectual</a></li>
       </ul>
     </div>
     <div class="col-6 col-md">
       <h5>Resources</h5>
       <ul class="list-unstyled text-small">
-        <li><a class="link-secondary" href="#">Resource name</a></li>
-        <li><a class="link-secondary" href="#">Resource</a></li>
-        <li><a class="link-secondary" href="#">Another resource</a></li>
-        <li><a class="link-secondary" href="#">Final resource</a></li>
+        <li><a class="link-secondary" href="">Resource name</a></li>
+        <li><a class="link-secondary" href="">Resource</a></li>
+        <li><a class="link-secondary" href="">Another resource</a></li>
+        <li><a class="link-secondary" href="">Final resource</a></li>
       </ul>
     </div>
     <div class="col-6 col-md">
       <h5>Resources</h5>
       <ul class="list-unstyled text-small">
-        <li><a class="link-secondary" href="#">Business</a></li>
-        <li><a class="link-secondary" href="#">Education</a></li>
-        <li><a class="link-secondary" href="#">Government</a></li>
-        <li><a class="link-secondary" href="#">Gaming</a></li>
+        <li><a class="link-secondary" href="">Business</a></li>
+        <li><a class="link-secondary" href="">Education</a></li>
+        <li><a class="link-secondary" href="">Government</a></li>
+        <li><a class="link-secondary" href="">Gaming</a></li>
       </ul>
     </div>
     <div class="col-6 col-md">
       <h5>About</h5>
       <ul class="list-unstyled text-small">
-        <li><a class="link-secondary" href="#">Team</a></li>
-        <li><a class="link-secondary" href="#">Ubicación</a></li>
-        <li><a class="link-secondary" href="#">Conócenos</a></li>
-        <li><a class="link-secondary" href="#">Contacto</a></li>
+        <li><a class="link-secondary" href="">Team</a></li>
+        <li><a class="link-secondary" href="">Ubicación</a></li>
+        <li><a class="link-secondary" href="">Conócenos</a></li>
+        <li><a class="link-secondary" href="">Contacto</a></li>
       </ul>
     </div>
   </div>
