@@ -15,6 +15,6 @@ const alert = (message, type) => {
 const alertTrigger = document.getElementById('liveAlertBtn')
 if (alertTrigger) {
     alertTrigger.addEventListener('click', () => {
-        alert('Gracias por descargar RegistrApp!', 'success')
+        alert('Gracias por descargar RegistrApp!', 'warning')
     })
 }

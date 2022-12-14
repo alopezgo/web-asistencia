@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.104.2">
-    <title>Product example · Bootstrap v5.2</title>
+    <title>RegistrApp</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/product/">
     <link rel="icon"href="{% static 'img/favicon.ico' %}">
@@ -76,13 +76,12 @@
 <header class="site-header sticky-top py-1">
   <nav class="container d-flex flex-column flex-md-row justify-content-between">
     <a class="py-2" href="" aria-label="Product">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img" viewBox="0 0 24 24"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
     </a>
     <a class="py-2 d-none d-md-inline-block" href="">Productos</a>
     <a class="py-2 d-none d-md-inline-block" href="">Más Información</a>
     <a class="py-2 d-none d-md-inline-block" href="">Seguridad</a>
     <a class="py-2 d-none d-md-inline-block" href="">Asistencia</a>
-    <a class="py-2 d-none d-md-inline-block" href="">Descarga</a>
     <a class="py-2 d-none d-md-inline-block" href="">Nosotros</a>
     <a class="py-2 d-none d-md-inline-block" href="">FAQ</a>
   </nav>
@@ -91,16 +90,16 @@
 <main>
   <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
     <div class="col-md-5 p-lg-5 mx-auto my-5">
-      <h1 class="display-4 fw-normal">RegistrApp</h1>
-      <p class="lead fw-normal">Olvídate de pasar lista, una App ya se ocupa de ello. Tú preocupate de poner atención en clases y pasar el ramo como sea.</p>
-      {% if request.user_agent.is_pc%}
-      <p class="lead">{{data}}</p>
+      <h1 style="color:#252557"class="display-4 fw-normal">RegistrApp</h1>
+      <p style="color:#36454f" class="lead fw-normal">Olvídate de pasar lista, una App ya se ocupa de ello. Tú preocupate de poner atención en clases y pasar el ramo como sea.</p>
+      {% if request.user_agent.mobile%}
+      <p class="lead" style="color:#36454f">{{data}}</p>
       <div id="liveAlertPlaceholder"></div>
-      <a class="btn btn-outline-secondary" href="{% url 'download_apk' %}" id="liveAlertBtn">Descargar</a>
+      <a class="btn btn-secondary" style="color:#fff;" href="{% url 'download_apk' %}" id="liveAlertBtn">Descargar</a>
 
       {% else %}
-      <p class="lead">{{data}}</p>
-      <a class="btn btn-outline-secondary" href="" data-bs-toggle="modal" data-bs-target="#exampleModal">Obtener Código</a>
+      <p class="lead"  style="color:#36454f">{{data}}</p>
+      <a class="btn btn-secondary" style="color:#fff;" href="" data-bs-toggle="modal" data-bs-target="#exampleModal">Obtener Código</a>
       
       <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -111,7 +110,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <img src="{% static 'img/descargaandroid.jpeg'%}">
+        <img src="{% static 'img/frame.png'%}">
       </div>
       <div class="modal-footer">
       </div>
@@ -125,10 +124,10 @@
   </div>
 
   <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-    <div class="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-      <div class="my-3 py-3">
-        <h2 class="display-5">Android</h2>
-        <p class="lead">Versión 1.0 disponible para Android 8.0 o superior</p>
+    <div class="text-bg me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden" style= "background-color:#252557">
+      <div class="my-3 py-3" style= "background-color:#252557">
+        <h2 style= "color:#fff" class="display-5">Android</h2>
+        <p style= "color:#fff" class="lead">Versión 1.0 disponible para Android 8.0 o superior</p>
       </div>
       <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
       <img src="{% static 'img/descargaandroid.jpeg'%}" style="width: 100%; height: 200px">
@@ -140,7 +139,7 @@
         <h2 class="display-5">IOS</h2>
         <p class="lead">Próximamente versión para sistemas operativos Ios</p>
       </div>
-      <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+      <div class="bg shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0; background-color:#252557;">
       <img src="{% static 'img/descargaios.jpeg'%}" style="width: 85%; height: 150px; margin-top: 30px; ">
       </img >
       </div>
@@ -151,8 +150,8 @@
 <footer class="container py-5">
   <div class="row">
     <div class="col-12 col-md">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
-      <small class="d-block mb-3 text-muted">&copy; 2017–2022</small>
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+      <small class="d-block mb-3 text-muted">&copy; 2021–2022</small>
     </div>
     <div class="col-6 col-md">
       <h5>Legal</h5>
